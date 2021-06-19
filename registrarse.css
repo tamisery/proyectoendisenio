@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit; }
+body{
+background-image:url(./photo-1609602644879-dd158c2b56b4.jpg) ;
+font-family: 'Rock Salt', cursive;
+}    
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}    
+header {
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(235, 82, 73, .7), rgba(0, 0, 0, .7)), url(./reci.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rock Salt', cursive;
+}
+.navegacion ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    font-family: 'Rock Salt', cursive;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background-color: black;
+    padding: 20px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.navegacion li {
+    
+    flex: 3; }
+    .formu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .cambios {
+        width: 250px;
+        height: 50px;
+        border-color:#f4f4f4 ;
+        background-color: transparent;
+        font-family: 'Rock Salt' , cursive;
+    }
+    footer {
+        color: #f4f4f4;
+    }
+    @media (max-width:768px) {
+        h1 {
+            text-align:unset;
+        }
+        .navegacion ul {
+            display: block;
+        }
+        .pics {
+            grid-template-columns: 1fr;
+        }
+        .formu {
+            display: block;
+        }
+    }

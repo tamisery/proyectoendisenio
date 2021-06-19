@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit; }
+body{
+background-image:url(./photo-1609602644879-dd158c2b56b4.jpg) ;
+font-family: 'Rock Salt', cursive;
+}    
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}    
+header {
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(235, 82, 73, .7), rgba(0, 0, 0, .7)), url(./reci.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    
+}
+.entrada {
+    margin: 0 auto;
+    width: 300px;
+    padding: 1em;
+    border: 1px solid #CCC;
+}
+h1 {
+    
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+}
+.navegacion ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navegacion a {
+    font-family: 'Rock Salt', cursive;
+    color: white;
+    font-weight: 100;
+    padding: 20px 5px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background-color: black;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.navegacion li {
+    flex: 3; 
+}
+h2 {
+text-align: center;
+color: #f4f4f4;
+}
+.pics {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.pics img {
+    width: 100%;
+}
+.contacto h3 {
+    
+   
+    color: #f4f4f4;
+    text-align: center;
+}
+.social  {
+    
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.social a {
+    color: white;
+    font-weight: 100;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 5px;
+}
+.social li {
+    flex: 3;
+}
+.formu form {
+    margin: 0 auto;
+    width: 400px;
+    
+    padding: 1em;
+    border: 1px solid #CCC;
+    
+}
+  
+.formu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.formu form li + li {
+    margin-top: 1em;
+}
+  
+.formu label {
+    display: inline;
+    width: 90px;
+    text-align: justify;
+    color: #f4f4f4;
+}
+  
+.formu input,
+textarea {
+   
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid rgb(207, 195, 195);
+}
+  
+
+  
+.formu textarea {
+    vertical-align: top;
+    height: 5em;
+}
+  
+.formu button {
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+    border: 1px solid rgb(207, 195, 195);
+}
+  
+footer {
+    color: #f4f4f4;
+}
+@media (max-width:768px) {
+    h1 {
+        text-align:unset;
+    }
+    .navegacion ul {
+        display: block;
+    }
+    .pics {
+        grid-template-columns: 1fr;
+    }
+    .formu {
+        display: block;
+    }
+}
