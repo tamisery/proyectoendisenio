@@ -53,3 +53,12 @@ h1 {
 .navegacion li {
     flex: 3; 
 }
+
+p {
+text-align: justify;
+margin-top: 50;
+margin-left: 150;
+margin-right: 150;
+color: #f4f4f4
+
+}
