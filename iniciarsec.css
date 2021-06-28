@@ -8,52 +8,65 @@ html {
 *::after {
   box-sizing: inherit; }
 body{
-background-image:url(./photo-1609602644879-dd158c2b56b4.jpg) ;
+background-image: url(./alex-brisbey-KGQhWwB0tDg-unsplash.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: auto;
 font-family: 'Rock Salt', cursive;
 }    
 .container {
 max-width: 1000px;
 margin: 0 auto;
 display: flex;
-align-items: center;
-justify-content: center;
 flex-direction: column;
+flex-wrap: wrap;
+
 }
 
 
-
+.cajita1 {
+  align-items: center;
+  justify-content: center;
+} 
 header {
   color: white;
   background: linear-gradient(rgba(0, 0, 0, .7), rgba(235, 82, 73, .7), rgba(0, 0, 0, .7)), url(./reci.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100px;
+  height: 400px;
   align-self: center;
+}
+h1 {
+  text-align: center;
 }  
-
-.navegacion {
-  margin: 0;
-  padding: 0;
+.cajita {
+  
   
 }
 .navegacion ul {
-  list-style: none;
-  display: inline-flex;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .navegacion a {
-  font-family: 'Rock Salt', cursive;
-  color: white;
-  font-weight: 100;
-  padding: 20px 5px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  background-color: black;
-  width: 100%;
-  
-}  
-  
+    font-family: 'Rock Salt', cursive;
+    color: white;
+    font-weight: 100;
+    padding: 20px 5px;
+    
+    text-decoration: none;
+    background-color: black;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.navegacion li {
+    flex: 4; 
+}
+
   
 
 

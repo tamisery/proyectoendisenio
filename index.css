@@ -10,6 +10,7 @@ html {
 body{
 background-image:url(./photo-1609602644879-dd158c2b56b4.jpg) ;
 font-family: 'Rock Salt', cursive;
+
 }    
 .container {
     max-width: 1000px;
@@ -58,7 +59,7 @@ h1 {
     color: white;
     font-weight: 100;
     padding: 20px 5px;
-    letter-spacing: 2px;
+    
     text-decoration: none;
     background-color: black;
     width: 100%;
