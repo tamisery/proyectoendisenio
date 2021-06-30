@@ -53,7 +53,12 @@ h1 {
 .navegacion li {
     flex: 3; 
 }
-
+.texto {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
 p {
 text-align: justify;
 margin-top: 50;
@@ -61,4 +66,24 @@ margin-left: 150;
 margin-right: 150;
 color: #f4f4f4
 
+}
+footer {
+    color: #f4f4f4;
+}
+@media (max-width:768px) {
+    h1 {
+        text-align:unset;
+    }
+    .navegacion ul {
+        display: block;
+    }
+    .texto { 
+        text-align:unset ;
+    }
+    .pics {
+        grid-template-columns: 1fr;
+    }
+    .formu {
+        display: block;
+    }
 }
