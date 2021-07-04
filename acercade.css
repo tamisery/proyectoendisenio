@@ -8,12 +8,15 @@ html {
 *::after {
     box-sizing: inherit; }
 body{
-background-image:url(./photo-1609602644879-dd158c2b56b4.jpg) ;
-font-family: 'Rock Salt', cursive;
+   background-image:url(./photo-1609602644879-dd158c2b56b4.jpg) ;
+   font-family: 'Rock Salt', cursive;
 }    
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
+width: 100%;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
     
 }    
 header {
@@ -59,6 +62,7 @@ h1 {
     justify-content: center;
     flex-direction: column;
 }
+
 p {
 text-align: justify;
 margin-top: 50;
@@ -66,6 +70,16 @@ margin-left: 150;
 margin-right: 150;
 color: #f4f4f4
 
+}
+.imagen {
+    
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+}
+.tama {
+    width: 100%;
 }
 footer {
     color: #f4f4f4;
@@ -77,13 +91,10 @@ footer {
     .navegacion ul {
         display: block;
     }
-    .texto { 
-        text-align:unset ;
+    p { 
+        
     }
-    .pics {
+    .imagen {
         grid-template-columns: 1fr;
     }
-    .formu {
-        display: block;
-    }
-}
+}    
