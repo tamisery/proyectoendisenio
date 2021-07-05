@@ -125,34 +125,34 @@ h1 {
       
     }
     
-  .formu a {
+.formu a {
       text-decoration: none;
       font-size: 12px;
       line-height: 20px;
       color: darkgrey;
-    }
+}
     
-  .formu a:hover {
+.formu a:hover {
       color: #fff;
-    }
-  .sign {
+}
+.sign {
     display: inline-flex;
-  }  
+}  
 footer {
-        color: #f4f4f4;
-        text-align: left;
-  }
-    @media (max-width:768px) {
-        h1 {
-            text-align:unset;
+  color: #f4f4f4;
+        
+}
+@media (max-width:768px) {
+  h1 {
+      text-align:unset;
+    }
+  .navegacion ul {
+      display: block;
         }
-        .navegacion ul {
-            display: block;
+  .pics {
+     grid-template-columns: 1fr;
         }
-        .pics {
-            grid-template-columns: 1fr;
-        }
-        .formu {
-            display: block;
-        }
+  .formu {
+    display: block;
+    }
     }

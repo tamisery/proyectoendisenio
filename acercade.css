@@ -63,12 +63,12 @@ h1 {
     flex-direction: column;
 }
 
-p {
-text-align: justify;
-margin-top: 50;
-margin-left: 150;
-margin-right: 150;
-color: #f4f4f4
+.texto p {
+    font-size: calc(0.5em + 1vw);
+    line-height: 2em;
+    padding: 1em;
+    margin: 1em;
+    color: #f4f4f4
 
 }
 .imagen {
@@ -83,6 +83,7 @@ color: #f4f4f4
 }
 footer {
     color: #f4f4f4;
+    
 }
 @media (max-width:768px) {
     h1 {
@@ -91,8 +92,9 @@ footer {
     .navegacion ul {
         display: block;
     }
-    p { 
-        
+    .texto{ 
+        font-size: 20px;
+        text-align: justify;
     }
     .imagen {
         grid-template-columns: 1fr;
