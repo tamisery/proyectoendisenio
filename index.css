@@ -176,9 +176,6 @@ footer {
     color: #f4f4f4;
 }
 @media (max-width:768px) {
-    h1 {
-        text-align:center;
-        }
     
     .navegacion ul {
         display: block;
@@ -186,6 +183,10 @@ footer {
     .navegacion a  {
         text-align: center;
     }
+    h1 {
+        text-align:center;
+        }
+    
     h2 {
         text-align: center;
     }
