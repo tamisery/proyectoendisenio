@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Mandali&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 *,
 *::before,
 *::after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 body{
 background-image: url(./alex-brisbey-KGQhWwB0tDg-unsplash.jpg);
@@ -38,6 +39,9 @@ header {
 }
 h1 {
   text-align: center;
+  align-self: center;
+  justify-self: center;
+  font-size: 100px;
 }  
 
 .navegacion ul {
@@ -61,6 +65,11 @@ h1 {
 .navegacion li {
     flex: 4; 
 }
+.cajita{
+    align-items: center;
+    justify-content: center;
+  
+}
 .formu {
     width: 320px;
     height: 420px;
@@ -77,11 +86,6 @@ h1 {
     text-align: center;
     font-size: 22px;
   }    
-    
-  
-  
-
-  
 .formu label {
     margin: 0;
     padding: 0;
@@ -142,11 +146,19 @@ footer {
 }  
 
 @media screen and (max-width:768px) {
-  h1 {
-    text-align:unset;
-    }
-  .navegacion ul {
+  .header {
     display: block;
+} 
+.navegacion ul {
+    display: block;
+    }
+.navegacion a  {
+    text-align: center;
+}
+h1 {
+    text-align:center;
+    font-size: 30px;
+    
     }
   .formu {
     display: block;

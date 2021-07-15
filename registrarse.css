@@ -23,8 +23,6 @@ font-family: 'Rock Salt', cursive;
   flex-wrap: wrap;
 
 }
-
-
 .cajita1 {
   align-items: center;
   justify-content: center;
@@ -40,6 +38,9 @@ header {
 }
 h1 {
   text-align: center;
+  align-self: center;
+  justify-self: center;
+  font-size: 100px;
 }  
 
 .navegacion ul {
@@ -73,6 +74,7 @@ h1 {
     color: #fff;
     box-sizing: border-box;
     padding: 70px 30px;
+    margin: 50px;
     align-self: center;
     flex-direction: column;
       
@@ -143,16 +145,24 @@ footer {
         
 }
 @media (max-width:768px) {
-  h1 {
-      text-align:unset;
+  .header {
+    display: block;
+} 
+.navegacion ul {
+    display: block;
     }
-  .navegacion ul {
-      display: block;
-        }
+.navegacion a  {
+    text-align: center;
+}
+h1 {
+    text-align:center;
+    font-size: 30px;
+    
+    }
   .pics {
      grid-template-columns: 1fr;
         }
   .formu {
     display: block;
     }
-    }
+}

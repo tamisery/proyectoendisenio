@@ -45,6 +45,9 @@ header {
 
 h1 {
   text-align: center;
+  align-self: center;
+  justify-self: center;
+  font-size: 100px;
 }  
 
 .navegacion {
@@ -97,6 +100,9 @@ color: #f4f4f4;
     
     
 }
+a :hover {
+    color: #f4f4f4;
+}
 .pics {
   display: grid;
   grid-gap: 20px;
@@ -114,27 +120,23 @@ color: #f4f4f4;
     color: #f4f4f4;
     text-align: center;
 }
+
 .social  {
     
-    list-style: none;
+    color: #f4f4f4;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
+    justify-content: space-around;
+    margin: 50;
+    flex: 4;
+    padding: 40;
+    
+    
     
 }
-.social a {
-    color: white;
-    font-weight: 100;
-    display: inline-block;
-    text-align: center;
-    padding: 20px 5px;
-    width: 100%;
-}
-.social li {
-    flex: 3;
-    width: 600px;
-}
+
+
+
 .formu {
     display: flex;
     justify-content: center;
@@ -176,7 +178,9 @@ footer {
     color: #f4f4f4;
 }
 @media (max-width:768px) {
-    
+    .header {
+        display: block;
+    } 
     .navegacion ul {
         display: block;
         }
@@ -185,6 +189,8 @@ footer {
     }
     h1 {
         text-align:center;
+        font-size: 30px;
+        
         }
     
     h2 {

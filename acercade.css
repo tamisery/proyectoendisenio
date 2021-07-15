@@ -30,9 +30,11 @@ header {
 }
 
 h1 {
-    
     font-family: 'Rock Salt', cursive;
     text-align: center;
+    align-self: center;
+   justify-self: center;
+  font-size: 100px;
 }
 .navegacion ul {
     display: flex;
@@ -86,12 +88,20 @@ footer {
     
 }
 @media (max-width:768px) {
-    h1 {
-        text-align:unset;
-    }
+    .header {
+        display: block;
+    } 
     .navegacion ul {
         display: block;
+        }
+    .navegacion a  {
+        text-align: center;
     }
+    h1 {
+        text-align:center;
+        font-size: 30px;
+        
+        }
     .texto{ 
         font-size: 20px;
         text-align: justify;
