@@ -50,7 +50,8 @@ h1 {
     padding: 20px 5px;
     letter-spacing: 2px;
     text-decoration: none;
-    background-color: black;
+    background: linear-gradient( rgba(235, 82, 73, .7), rgba(0, 0, 0, .7));
+    
     width: 100%;
     display: inline-block;
     text-align: center;
@@ -63,6 +64,8 @@ h1 {
     align-content: center;
     justify-content: center;
     flex-direction: column;
+    margin: 100px;
+
 }
 
 .texto p {
@@ -78,7 +81,7 @@ h1 {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 50px;
+    margin: 100px;
 }
 .tama {
     width: 100%;
@@ -105,8 +108,10 @@ footer {
     .texto{ 
         font-size: 20px;
         text-align: justify;
+        margin: 0;
     }
     .imagen {
         grid-template-columns: 1fr;
+        margin: 0;
     }
 }    

@@ -26,6 +26,7 @@ font-family: 'Rock Salt', cursive;
 .cajita1 {
   align-items: center;
   justify-content: center;
+  width: 100%;
 } 
 header {
   color: white;
@@ -57,7 +58,7 @@ h1 {
     padding: 20px 5px;
     
     text-decoration: none;
-    background-color: black;
+    background: linear-gradient( rgba(235, 82, 73, .7), rgba(0, 0, 0, .7));
     width: 100%;
     display: inline-block;
     text-align: center;
@@ -74,7 +75,7 @@ h1 {
     color: #fff;
     box-sizing: border-box;
     padding: 70px 30px;
-    margin: 50px;
+    margin: 100px;
     align-self: center;
     flex-direction: column;
       
@@ -164,5 +165,9 @@ h1 {
         }
   .formu {
     display: block;
+    margin-top: 50;
+    margin-right:0;
+    margin-bottom: 50;
+    margin-left: 0;
     }
 }
