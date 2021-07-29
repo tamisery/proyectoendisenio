@@ -7,7 +7,8 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit; }
+  box-sizing: inherit; 
+}
 
 body {
 background-image: url(./alex-brisbey-KGQhWwB0tDg-unsplash.jpg);
@@ -43,7 +44,22 @@ header {
   width: 100%;
 }
 
-h1 {
+.menubot {
+    display: none;
+    width: 100%;
+}
+.bt-menu a {
+    font-family: 'Rock Salt', cursive;
+    color: white;
+    font-weight: 100;
+    padding: 20px 5px;
+    text-decoration: none;
+    background: linear-gradient( rgba(235, 82, 73, .7), rgba(0, 0, 0, .7));
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+header h1 {
   text-align: center;
   align-self: center;
   justify-self: center;
@@ -77,36 +93,55 @@ h1 {
     flex: 4;
     width: 100%; 
 }
-h2 {
-text-align: center;
-color: #f4f4f4;
-}
+
 .entrada {
-    background: url(./photo-1609602644879-dd158c2b56b4);
+    
     display: flex;
+    align-self: center;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 320px;
+    margin: 20;
+    padding: 20;
     color: #fff;
     box-sizing: border-box;
-    margin: 40px;
-    padding: 100px;
+    
+    
     
     
 }
-.entrada button {
-    font-family: 'Rock Salt', cursive;
-    cursor: pointer;
-    border: 1px solid;
-    background: linear-gradient(0deg, rgba(126,124,121,1) 0%, rgba(224,216,200,1) 100%);
-    padding: 15px 32px;
-    font-size: 20px;
-    
-    
-}
+.entrada h1 {
+width: 100%;
+align-self:center; 
+text-align: center;
+color: #f4f4f4;
 
+line-height: 2em;
+padding: 3em;
+margin: 3em;
+
+}
+.entradi1 {
+    
+    align-self: flex-end;
+    text-align: center;
+    width: 175px;
+    height: 100px;
+    background: grey;
+    box-sizing: border-box;
+    margin: 10;
+    padding: 5;
+}
+.entradi2 {
+    align-self: flex-end;
+    text-align: center;
+    padding: 5;
+    width: 175px;
+    height: 100px;
+    background: grey;
+    box-sizing: border-box;
+    margin: 10;
+}
 .pics {
   display: grid;
   grid-gap: 20px;
@@ -124,7 +159,7 @@ color: #f4f4f4;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    
+    background-color: transparent;
     color: #fff;
     box-sizing: border-box;
 
@@ -144,33 +179,48 @@ color: #f4f4f4;
     align-items: center;
     margin: 0;
     width: 100%;
-    
+    height: 10%;
     color: #fff;
     box-sizing: border-box;
     
     
 }
 span {
-    width: 50px;
-    height: 50px;
+    width: 75;
+    height: 50;
 }
 
 
 .formu {
+    
     display: flex;
     justify-content: center;
     align-self: center;
     flex-direction: column;
-    
-    padding: 1em;
-    border: 1px solid #CCC;
+    background-color: rgb(68, 67, 67);
+    width: 340px;
+    height: 420px;
+    box-sizing: border-box;
+    padding: 70px 30px;
+    margin: 100px;
 }
 .formu label {
-    display: block;
-    width: 90px;
-    text-align: justify;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-self: center;
     color: #f4f4f4;
-}
+  }
+  
+.formu input {
+    width: 100%;
+    height: 40px;
+    color: #f4f4f4;
+    font-size: 14px;
+    justify-content: center;
+    align-self: center;
+    
+  }
   
 .formu input,
 textarea {
@@ -191,16 +241,47 @@ textarea {
     font-family: 'Rock Salt', cursive;
     text-align: center;
     border: 1px solid rgb(207, 195, 195);
+    margin: 10;
+
 }
   
 footer {
     color: #f4f4f4;
 }
 @media (max-width:768px) {
-    .header {
+    header {
         display: block;
-        background-position: center;
-    } 
+    }    
+     
+    header h1 {
+        text-align: center;
+        font-size: 30px;
+        background-color: black; 
+    }
+    .menubot {
+		display: block;
+		
+		
+	}
+ 
+	.menubot .bt-menu {
+		display: flex;
+		padding: 15px 5px;
+		background: linear-gradient( rgba(235, 82, 73, .7), rgba(0, 0, 0, .7));background-color: black;
+		text-decoration: none;
+		color: #f4f4f4;
+		box-sizing: border-box;
+	}
+
+	.menubot span {
+		
+		font-size: 30px;
+	}
+    .menubot a {
+        justify-content: left;
+        align-items: center;
+    }
+    
     .navegacion ul {
         display: block;
         }
@@ -210,41 +291,42 @@ footer {
     }
     
     .entrada {
-        
+        display: block;
     }
-    
-    h1 {
-        text-align:center;
-        font-size: 30px;
+    .entrada h1 {
         
-        }
-    
-    h2 {
+        font-size: 25px;
         text-align: center;
+        margin-top: 15;
+       
         
     }
-    button {
 
-    }
     .pics {
         grid-template-columns: 1fr;
         margin: 0;
     }
     .contacto {
-        align-self: center;
+        display: block;
+        margin: 0;
     }
-    .contacto h3 {
+    .contacto h1 {
         text-align: center;
         margin: 0;
     }
-    .social li{
-        display: block;
+    .social {
+        align-self: center;
+        margin: 0;
+        
         
     }
     .formu {
         display: block;
-        text-align: unset;
+        margin: 0;
+        
+        
       }  
   } footer {
       text-align: left;
+      font-size: 10px;
   }

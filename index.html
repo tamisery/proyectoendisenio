@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href= "index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
@@ -12,6 +12,10 @@
     <div class="container">
       <div class ="cajita1">
         <header>
+          <div class="menubot">
+            <a href="#" class="bt-menu"><span class="fas fa-bars"></span>Menu</a>
+
+          </div>
         <nav class="navegacion">
          <ul>
             <li><a href="">Inicio</a></li>
@@ -20,13 +24,19 @@
             <li><a href="acercade.html">Acerca de</a></li>
          </ul>
         </nav>
-        <h1>Rockeamos todos</h1>
+        <h1 class="titulo">Rockeamos todos</h1>
        </header> 
           
       </div> 
         <div class="entrada">
-            <h2>¡Conseguí tus entradas aquí!</h2>
-            <button type="link">Entradas disponibles</button>
+            <h1>¡Conseguí tus entradas aquí!</h1>
+            <div class= "entradi1">
+              <p>Entrada VIP $3000</p>
+            </div>
+            <div class="entradi2">
+              <p>Entrada general $1500</p>
+            </div>
+            
         </div>
         <section class="pics">
             <img src="./tim-toomey-OK3He0qsw0s-unsplash.jpg" alt="">
@@ -44,7 +54,7 @@
             <img src="./gary-ellis-XtZvUJ0YYHg-unsplash.jpg" alt="">
         </section>
         <section class="contacto">
-          <h2>Seguinos en nuestras redes</h2ss>
+          <h2>Seguinos en nuestras redes</h2>
           <div class="social">
             <span class="fab fa-instagram"></span>
             <span class="fab fa-facebook-f"></span>
@@ -72,5 +82,7 @@
             
         </footer>
     </div>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html>
