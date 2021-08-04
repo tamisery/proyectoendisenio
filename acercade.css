@@ -18,7 +18,12 @@ display: flex;
 flex-direction: column;
 flex-wrap: wrap;
     
-}    
+}   
+.cajita1 {
+    align-items: center;
+    justify-content: center;
+    margin: -8px;
+}
 header {
     color: white;
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(235, 82, 73, .7), rgba(0, 0, 0, .7)), url(./reci.jpg);

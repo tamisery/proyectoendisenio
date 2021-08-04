@@ -27,8 +27,7 @@ font-family: 'Rock Salt', cursive;
 .cajita1 {
   align-items: center;
   justify-content: center;
-  width: 100%;
-} 
+  margin: -8px;}
 header {
   color: white;
   background: linear-gradient(rgba(0, 0, 0, .7), rgba(235, 82, 73, .7), rgba(0, 0, 0, .7)), url(./reci.jpg);
@@ -208,9 +207,9 @@ h1 {
   .formu {
     display: block;
     text-align: unset;
-    margin-top: 50;
+    
     margin-right:0;
-    margin-bottom: 50;
+    
     margin-left: 0;
   }  
 }    
