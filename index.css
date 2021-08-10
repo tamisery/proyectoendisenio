@@ -11,8 +11,9 @@ html {
 }
 
 body {
-background-image: url(./alex-brisbey-KGQhWwB0tDg-unsplash.jpg);
-background-repeat: no-repeat;
+overflow-x: hidden;
+background-image: url(./photo-1609602644879-dd158c2b56b4.jpg);
+background-repeat: repeat;
 background-position: center;
 background-size: auto;
 font-family: 'Rock Salt', cursive;
@@ -20,18 +21,19 @@ font-family: 'Rock Salt', cursive;
 
 .container {
 width: 100%;
-margin: 0;
+margin: -8px;
 display: flex;
 flex-direction: column;
 flex-wrap: wrap;
 }
 
 
-.cajita1 {
+.cajita1{
 align-items: center;
 justify-content: center;
-margin: -8px;
-} 
+}
+
+ 
 
 header {
   color: white;
@@ -41,13 +43,13 @@ header {
   background-size: cover;
   height: 400px;
   align-self: center;
-  width: 100%;
-}
+}  
+
 
 .menubot {
     display: none;
-    width: 100%;
-}
+}    
+
 .bt-menu a {
     font-family: 'Rock Salt', cursive;
     color: white;
@@ -55,7 +57,7 @@ header {
     padding: 20px 5px;
     text-decoration: none;
     background: linear-gradient( rgba(235, 82, 73, .7), rgba(0, 0, 0, .7));
-    width: 100%;
+    
     display: inline-block;
     text-align: center;
 }
@@ -66,15 +68,12 @@ header h1 {
   font-size: 100px;
 }  
 
-.navegacion {
-    width: 100%
-}
 .navegacion ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 100%;
+    
 }
 
 .navegacion a {
@@ -119,10 +118,12 @@ padding: 2em;
 margin: 3em; 
 }
 .titulo p{
+    background: rgba(143, 142, 142, 0.5);
+    color: rgb(255, 255, 255) ;
     text-align: justify;
     line-height: 2em;
-padding: 1.5em;
-margin: 1.5em; 
+    padding: 1.5em;
+    margin: 1.5em; 
 }
 .entradi1 {
     
@@ -131,7 +132,7 @@ margin: 1.5em;
     text-align: center;
     width: 175px;
     height: 300px;
-    background: rgba(143, 142, 142, 0.789);
+    background: rgba(143, 142, 142, 0.748);
     box-sizing: border-box;
     margin: 15;
     padding: 5;
@@ -143,13 +144,26 @@ margin: 1.5em;
     padding: 5;
     width: 175px;
     height: 300px;
-    background: rgba(143, 142, 142, 0.789);
+    background: rgba(143, 142, 142, 0.748);
     box-sizing: border-box;
+   
     margin: 15;
 }
-
-p{
-    font-size: 14px;
+h3 {
+    color:rgba(0, 0, 0, 0.892);
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 16px;
+}
+.entrada p {
+    color: rgb(255, 255, 255) ;
+    text-align: center;
+    font-size: 12px;
+    
+}
+.entrada .parra {
+    text-decoration: underline;
+    color: rgba(204, 182, 181, 0.7) ;
 }
 .entradi1 button {
     background: linear-gradient( rgba(235, 82, 73, .7), rgba(0, 0, 0, .7));
@@ -168,20 +182,20 @@ p{
 button:hover {
     color: rgba(143, 142, 142, 0.789);
 }
-.fotitos {
-    align-items: center;
-    justify-content: center;
-    margin: -8px;}
+
+
 .pics {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
+  
+  
+  
 
 }
 .pics img {
     width: 100%;
-    margin: 0;
+    
 }
 .contacto {
     display: flex;
@@ -192,16 +206,19 @@ button:hover {
     background-color: transparent;
     color: #fff;
     box-sizing: border-box;
-    margin: 20;
-    padding: 20;
+    margin: 25px;
+    padding: 20px;
 
   
 }
 .contacto h2 {
     
-   width: 100%; 
+    width: 100%; 
     color: #cfc0c0;
     text-align: center;
+    margin-top: 30px;
+    padding: 15;
+     
 }
 
 .social  {
@@ -209,7 +226,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: -8;
     width: 100%;
     height: 50%;
     color: #fff;
@@ -242,7 +259,7 @@ span {
     padding: 0;
     justify-content: center;
     align-self: center;
-    color:#c7c2c29a;
+    color:#db94949a;
   }
   
 .formu input {
@@ -329,7 +346,7 @@ footer {
     
     .entrada {
         display: block;
-        align-self: center;
+        
     }
     .entrada h1 {
         
@@ -356,26 +373,37 @@ footer {
         margin: 0;
     }
     .contacto {
-        display: block;
         margin: 0;
-    }
-    .contacto h1 {
-        text-align: center;
-        margin: 0;
+    }    
+        
+        
+    
+    .contacto h2 {
+        
+        margin: 2em;
+        font-size: 20px;
+        text-align: left;
+        
+        
+        
+        
+        
     }
     .social {
         align-self: center;
-        margin: 0;
+        margin: 2em;
         
         
     }
     .formu {
         display: block;
-        margin: 0;
+        margin: 5;
         
         
-      }  
-  } footer {
+    }  
+  
+    footer {
       text-align: left;
       font-size: 10px;
-  }
+    }
+}

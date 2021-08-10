@@ -8,8 +8,11 @@ html {
 *::after {
     box-sizing: inherit; }
 body{
-   background-image:url(./photo-1609602644879-dd158c2b56b4.jpg) ;
+   background-image:url(./alex-brisbey-KGQhWwB0tDg-unsplash.jpg) ;
    font-family: 'Rock Salt', cursive;
+   background-repeat: no-repeat;
+   background-size: auto;
+   background-position: center;
 }    
 .container {
 width: 100%;
@@ -75,8 +78,11 @@ h1 {
     display: inline-block;
     text-align: center;
 }
+a:hover {
+    color: rgba(143, 142, 142, 0.789);
+    }
 .navegacion li {
-    flex: 3; 
+    flex: 4; 
 }
 .texto {
     display: flex;
@@ -92,7 +98,7 @@ h1 {
     line-height: 2em;
     padding: 3em;
     margin: 3em;
-    color: #f4f4f4
+    color: rgb(41, 38, 38); 
 
 }
 .imagen {
@@ -105,6 +111,8 @@ h1 {
 .tama {
     width: 100%;
 }
+
+
 footer {
     color: #f4f4f4;
     
